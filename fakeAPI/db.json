@@ -5,7 +5,9 @@
         "nome": "O Senhor dos Anéis: A Sociedade do Anel",
         "capa": "https://exemplo.com/capa-senhor-dos-aneis.jpg",
         "comentarioPessoaA": "Este filme é incrível! Adoro a jornada dos personagens.",
+        "notaPessoaA": 5,
         "comentarioPessoaB": "Concordo! A trilha sonora é espetacular.",
+        "notaPessoaB": 4,
         "categoria": "Fantasia",
         "saga": "O Senhor dos Anéis"
       },
@@ -14,7 +16,9 @@
         "nome": "Star Wars: Episódio IV - Uma Nova Esperança",
         "capa": "https://exemplo.com/capa-star-wars.jpg",
         "comentarioPessoaA": "Star Wars é um clássico! Nunca me canso de assisti-lo.",
+        "notaPessoaA": 4,
         "comentarioPessoaB": "Sim, é um filme atemporal que continua fascinando gerações.",
+        "notaPessoaB": 5,
         "categoria": "Ficção Científica",
         "saga": "Star Wars"
       }

@@ -19,7 +19,9 @@ const App = () => {
             <h2>{filme.nome}</h2>
             <img src={filme.capa} alt={filme.nome} />
             <p><strong>Comentário Pessoa A:</strong> {filme.comentarioPessoaA}</p>
+            <p><strong>Nota Pessoa A:</strong> {filme.notaPessoaA}</p>
             <p><strong>Comentário Pessoa B:</strong> {filme.comentarioPessoaB}</p>
+            <p><strong>Nota Pessoa B:</strong> {filme.notaPessoaB}</p>
             <p><strong>Categoria:</strong> {filme.categoria}</p>
             <p><strong>Saga:</strong> {filme.saga}</p>
           </li>
