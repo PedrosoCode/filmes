@@ -1,27 +1,279 @@
 {
-    "filmes": [
-      {
-        "id": 1,
-        "nome": "O Senhor dos Anéis: A Sociedade do Anel",
-        "capa": "https://exemplo.com/capa-senhor-dos-aneis.jpg",
-        "comentarioPessoaA": "Este filme é incrível! Adoro a jornada dos personagens.",
-        "notaPessoaA": 5,
-        "comentarioPessoaB": "Concordo! A trilha sonora é espetacular.",
-        "notaPessoaB": 4,
-        "categoria": "Fantasia",
-        "saga": "O Senhor dos Anéis"
-      },
-      {
-        "id": 2,
-        "nome": "Star Wars: Episódio IV - Uma Nova Esperança",
-        "capa": "https://exemplo.com/capa-star-wars.jpg",
-        "comentarioPessoaA": "Star Wars é um clássico! Nunca me canso de assisti-lo.",
-        "notaPessoaA": 4,
-        "comentarioPessoaB": "Sim, é um filme atemporal que continua fascinando gerações.",
-        "notaPessoaB": 5,
-        "categoria": "Ficção Científica",
-        "saga": "Star Wars"
-      }
-    ]
-  }
-  
+  "filmes": [
+    {
+      "id": 1,
+      "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+      "capa": "https://exemplo.com/capa-senhor-dos-aneis.jpg",
+      "comentarioPessoaA": "Este filme é incrível! Adoro a jornada dos personagens.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! A trilha sonora é espetacular.",
+      "notaPessoaB": 4,
+      "categoria": "Fantasia",
+      "saga": "O Senhor dos Anéis"
+    },
+    {
+      "id": 2,
+      "nome": "Star Wars: Episódio IV - Uma Nova Esperança",
+      "capa": "https://exemplo.com/capa-star-wars.jpg",
+      "comentarioPessoaA": "Star Wars é um clássico! Nunca me canso de assisti-lo.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Sim, é um filme atemporal que continua fascinando gerações.",
+      "notaPessoaB": 5,
+      "categoria": "Ficção Científica",
+      "saga": "Star Wars"
+    },
+    {
+      "id": 3,
+      "nome": "Harry Potter e a Pedra Filosofal",
+      "capa": "https://exemplo.com/capa-harry-potter.jpg",
+      "comentarioPessoaA": "Um clássico da minha infância! Adoro o mundo mágico de Hogwarts.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! Sempre me emociono ao assistir.",
+      "notaPessoaB": 4,
+      "categoria": "Fantasia",
+      "saga": "Harry Potter"
+    },
+    {
+      "id": 4,
+      "nome": "Jurassic Park",
+      "capa": "https://exemplo.com/capa-jurassic-park.jpg",
+      "comentarioPessoaA": "Jurassic Park é um dos melhores filmes de aventura e suspense!",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Com certeza! Os efeitos especiais revolucionaram o cinema.",
+      "notaPessoaB": 5,
+      "categoria": "Aventura",
+      "saga": "Jurassic Park"
+    },
+    {
+      "id": 5,
+      "nome": "Matrix",
+      "capa": "https://exemplo.com/capa-matrix.jpg",
+      "comentarioPessoaA": "Matrix é um filme que desafia a mente! Adoro as cenas de ação.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "É verdade! A filosofia por trás da história é fascinante.",
+      "notaPessoaB": 4,
+      "categoria": "Ficção Científica",
+      "saga": "Matrix"
+    },
+    {
+      "id": 6,
+      "nome": "O Poderoso Chefão",
+      "capa": "https://exemplo.com/capa-poderoso-chefao.jpg",
+      "comentarioPessoaA": "Um clássico do cinema! A atuação de Marlon Brando é impecável.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! É uma obra-prima indiscutível.",
+      "notaPessoaB": 5,
+      "categoria": "Drama",
+      "saga": "O Poderoso Chefão"
+    },
+    {
+      "id": 7,
+      "nome": "Os Vingadores",
+      "capa": "https://exemplo.com/capa-vingadores.jpg",
+      "comentarioPessoaA": "Adoro filmes de super-heróis! Os efeitos visuais em Os Vingadores são incríveis.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Sim! Ver todos esses heróis juntos é emocionante.",
+      "notaPessoaB": 4,
+      "categoria": "Ação",
+      "saga": "Os Vingadores"
+    },
+    {
+      "id": 8,
+      "nome": "Toy Story",
+      "capa": "https://exemplo.com/capa-toy-story.jpg",
+      "comentarioPessoaA": "Toy Story é um dos melhores filmes de animação já feitos!",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! A história é emocionante e os personagens são cativantes.",
+      "notaPessoaB": 5,
+      "categoria": "Animação",
+      "saga": "Toy Story"
+    },
+    {
+      "id": 9,
+      "nome": "Piratas do Caribe: A Maldição do Pérola Negra",
+      "capa": "https://exemplo.com/capa-piratas-do-caribe.jpg",
+      "comentarioPessoaA": "Adoro filmes de piratas! Jack Sparrow é um personagem icônico.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Verdade! As aventuras de Jack Sparrow são sempre emocionantes.",
+      "notaPessoaB": 4,
+      "categoria": "Aventura",
+      "saga": "Piratas do Caribe"
+    },
+    {
+      "id": 10,
+      "nome": "De Volta para o Futuro",
+      "capa": "https://exemplo.com/capa-de-volta-para-o-futuro.jpg",
+      "comentarioPessoaA": "Um dos melhores filmes de viagem no tempo já feitos! Adoro a química entre os personagens.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Com certeza! É uma aventura emocionante do início ao fim.",
+      "notaPessoaB": 5,
+      "categoria": "Aventura",
+      "saga": "De Volta para o Futuro"
+    },
+    {
+      "id": 11,
+      "nome": "Avatar",
+      "capa": "https://exemplo.com/capa-avatar.jpg",
+      "comentarioPessoaA": "Avatar é um marco no cinema! As paisagens de Pandora são deslumbrantes.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Concordo! A tecnologia utilizada no filme é impressionante.",
+      "notaPessoaB": 4,
+      "categoria": "Ficção Científica",
+      "saga": "Avatar"
+    },
+    {
+      "id": 12,
+      "nome": "Indiana Jones e os Caçadores da Arca Perdida",
+      "capa": "https://exemplo.com/capa-indiana-jones.jpg",
+      "comentarioPessoaA": "Indiana Jones é uma aventura clássica! Adoro as cenas de ação e mistério.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Sim! É uma das melhores séries de filmes de aventura já feitas.",
+      "notaPessoaB": 5,
+      "categoria": "Aventura",
+      "saga": "Indiana Jones"
+    },
+    {
+      "id": 13,
+      "nome": "E.T.: O Extraterrestre",
+      "capa": "https://exemplo.com/capa-et.jpg",
+      "comentarioPessoaA": "E.T. é um filme que mexe com as emoções! Sempre me emociono com a história.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! É um clássico que nunca envelhece.",
+      "notaPessoaB": 4,
+      "categoria": "Ficção Científica",
+      "saga": "E.T."
+    },
+    {
+      "id": 14,
+      "nome": "Forrest Gump: O Contador de Histórias",
+      "capa": "https://exemplo.com/capa-forrest-gump.jpg",
+      "comentarioPessoaA": "Forrest Gump é um filme emocionante! A jornada do personagem é inspiradora.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Verdade! É um filme que fica marcado na memória.",
+      "notaPessoaB": 5,
+      "categoria": "Drama",
+      "saga": "Forrest Gump"
+    },
+    {
+      "id": 15,
+      "nome": "Gladiador",
+      "capa": "https://exemplo.com/capa-gladiador.jpg",
+      "comentarioPessoaA": "Gladiador é épico! As cenas de batalha são de tirar o fôlego.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Com certeza! Maximus é um personagem inesquecível.",
+      "notaPessoaB": 5,
+      "categoria": "Ação",
+      "saga": "Gladiador"
+    },
+    {
+      "id": 16,
+      "nome": "O Rei Leão",
+      "capa": "https://exemplo.com/capa-rei-leao.jpg",
+      "comentarioPessoaA": "O Rei Leão é um clássico da animação! As músicas são cativantes.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! É um filme que agrada crianças e adultos.",
+      "notaPessoaB": 5,
+      "categoria": "Animação",
+      "saga": "O Rei Leão"
+    },
+    {
+      "id": 17,
+      "nome": "Interestelar",
+      "capa": "https://exemplo.com/capa-interestelar.jpg",
+      "comentarioPessoaA": "Interestelar é um filme que explora temas complexos de forma incrível! As cenas no espaço são impressionantes.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "É verdade! O filme nos faz refletir sobre o universo e o tempo.",
+      "notaPessoaB": 4,
+      "categoria": "Ficção Científica",
+      "saga": "Interestelar"
+    },
+    {
+      "id": 18,
+      "nome": "Os Incríveis",
+      "capa": "https://exemplo.com/capa-os-incriveis.jpg",
+      "comentarioPessoaA": "Os Incríveis é uma homenagem aos super-heróis clássicos! Adoro a família de heróis.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Sim! É uma animação divertida e cheia de ação.",
+      "notaPessoaB": 4,
+      "categoria": "Animação",
+      "saga": "Os Incríveis"
+    },
+    {
+      "id": 19,
+      "nome": "A Origem",
+      "capa": "https://exemplo.com/capa-a-origem.jpg",
+      "comentarioPessoaA": "A Origem é um filme que desafia a percepção da realidade! Adoro as reviravoltas na trama.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Com certeza! Christopher Nolan é um mestre do suspense.",
+      "notaPessoaB": 5,
+      "categoria": "Suspense",
+      "saga": "A Origem"
+    },
+    {
+      "id": 20,
+      "nome": "O Labirinto do Fauno",
+      "capa": "https://exemplo.com/capa-labirinto-do-fauno.jpg",
+      "comentarioPessoaA": "O Labirinto do Fauno é uma obra-prima do cinema! A mistura de fantasia e drama é fascinante.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! É um filme visualmente deslumbrante.",
+      "notaPessoaB": 5,
+      "categoria": "Fantasia",
+      "saga": "O Labirinto do Fauno"
+    },
+    {
+      "id": 21,
+      "nome": "Pulp Fiction: Tempo de Violência",
+      "capa": "https://exemplo.com/capa-pulp-fiction.jpg",
+      "comentarioPessoaA": "Pulp Fiction é um filme único! Adoro a narrativa não linear e os personagens memoráveis.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Com certeza! Quentin Tarantino é um gênio do cinema.",
+      "notaPessoaB": 5,
+      "categoria": "Crime",
+      "saga": "Pulp Fiction"
+    },
+    {
+      "id": 22,
+      "nome": "O Exterminador do Futuro 2: O Julgamento Final",
+      "capa": "https://exemplo.com/capa-exterminador-do-futuro.jpg",
+      "comentarioPessoaA": "O Exterminador do Futuro 2 é um dos melhores filmes de ação já feitos! As cenas de perseguição são incríveis.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! Arnold Schwarzenegger está impecável como o T-800.",
+      "notaPessoaB": 5,
+      "categoria": "Ação",
+      "saga": "O Exterminador do Futuro"
+    },
+    {
+      "id": 23,
+      "nome": "Os Sete Samurais",
+      "capa": "https://exemplo.com/capa-sete-samurais.jpg",
+      "comentarioPessoaA": "Os Sete Samurais é um clássico do cinema japonês! Adoro a história e as cenas de batalha.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Sim! Akira Kurosawa criou uma obra-prima atemporal.",
+      "notaPessoaB": 5,
+      "categoria": "Drama",
+      "saga": "Os Sete Samurais"
+    },
+    {
+      "id": 24,
+      "nome": "Titanic",
+      "capa": "https://exemplo.com/capa-titanic.jpg",
+      "comentarioPessoaA": "Titanic é uma história emocionante! As cenas do navio afundando são impactantes.",
+      "notaPessoaA": 4,
+      "comentarioPessoaB": "Com certeza! É um dos filmes mais marcantes da história do cinema.",
+      "notaPessoaB": 5,
+      "categoria": "Romance",
+      "saga": "Titanic"
+    },
+    {
+      "id": 25,
+      "nome": "A Lista de Schindler",
+      "capa": "https://exemplo.com/capa-lista-de-schindler.jpg",
+      "comentarioPessoaA": "A Lista de Schindler é um filme poderoso! A história real é comovente.",
+      "notaPessoaA": 5,
+      "comentarioPessoaB": "Concordo! Steven Spielberg fez um trabalho incrível ao contar essa história.",
+      "notaPessoaB": 5,
+      "categoria": "Drama",
+      "saga": "A Lista de Schindler"
+    }
+  ]
+}

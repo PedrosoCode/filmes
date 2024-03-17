@@ -1,6 +1,8 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
+const multer = require('multer');
+const path = require('path');
 
 const app = express();
 app.use(express.json()); // Permite o uso de req.body para análise de solicitação JSON
@@ -24,6 +26,43 @@ connection.connect(err => {
 
 // Configuração do CORS
 app.use(cors());
+
+// Configuração do Multer para o upload de arquivos
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'uploads/')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+});
+
+const upload = multer({ storage: storage });
+
+// Rota para fazer upload da foto do usuário
+app.post('/api/usuarios/upload', upload.single('foto'), (req, res) => {
+    if (!req.file) {
+        res.status(400).send('Nenhum arquivo enviado');
+        return;
+    }
+    const fotoPath = req.file.path;
+    res.status(200).json({ fotoPath: fotoPath });
+});
+
+// Rota para atualizar o caminho da foto do usuário no banco de dados
+app.put('/api/usuarios/:id/foto', (req, res) => {
+    const userId = req.params.id;
+    const { fotoPath } = req.body;
+    const query = 'UPDATE usuarios SET foto = ? WHERE id = ?';
+    connection.query(query, [fotoPath, userId], (err, results) => {
+        if (err) {
+            console.error('Erro ao atualizar a foto do usuário:', err);
+            res.status(500).send('Erro ao atualizar a foto do usuário no banco de dados');
+            return;
+        }
+        res.status(200).send('Foto do usuário atualizada com sucesso');
+    });
+});
 
 // Rota para buscar todos os usuários
 app.get('/api/usuarios', (req, res) => {
