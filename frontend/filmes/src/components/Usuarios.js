@@ -5,6 +5,7 @@ const Usuarios = () => {
     const [usuarios, setUsuarios] = useState([]);
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
+    const [editingId, setEditingId] = useState(null);
 
     useEffect(() => {
         fetchData();
@@ -39,14 +40,41 @@ const Usuarios = () => {
         }
     };
 
+    const handleEditUsuario = (usuario) => {
+        setEditingId(usuario.id);
+        setNome(usuario.nome);
+        setEmail(usuario.email);
+    };
+
+    const handleUpdateUsuario = async () => {
+        try {
+            await axios.put(`http://localhost:5000/api/usuarios/${editingId}`, { nome, email });
+            setEditingId(null);
+            fetchData();
+        } catch (error) {
+            console.error('Erro ao atualizar usuário:', error);
+        }
+    };
+
     return (
         <div>
             <h1>Lista de Usuários</h1>
             <ul>
                 {usuarios.map((usuario) => (
                     <li key={usuario.id}>
-                        <strong>Nome:</strong> {usuario.nome}, <strong>Email:</strong> {usuario.email}
-                        <button onClick={() => handleDeleteUsuario(usuario.id)}>Excluir</button>
+                        {editingId === usuario.id ? (
+                            <>
+                                <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
+                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <button onClick={handleUpdateUsuario}>Salvar</button>
+                            </>
+                        ) : (
+                            <>
+                                <strong>Nome:</strong> {usuario.nome}, <strong>Email:</strong> {usuario.email}
+                                <button onClick={() => handleEditUsuario(usuario)}>Editar</button>
+                                <button onClick={() => handleDeleteUsuario(usuario.id)}>Excluir</button>
+                            </>
+                        )}
                     </li>
                 ))}
             </ul>
