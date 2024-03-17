@@ -1,5 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
+const cors = require('cors');
 
 const app = express();
 
@@ -19,6 +20,9 @@ connection.connect(err => {
     }
     console.log('Conexão bem-sucedida ao banco de dados!');
 });
+
+// Configuração do CORS
+app.use(cors());
 
 // Rota para buscar dados do banco de dados
 app.get('/api/usuarios', (req, res) => {
